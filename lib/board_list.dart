@@ -170,7 +170,10 @@ class BoardListState extends State<BoardList> with AutomaticKeepAliveClientMixin
 
     return Container(
         margin: EdgeInsets.all(8),
-        decoration: BoxDecoration(color: backgroundColor),
+        decoration: BoxDecoration(
+          borderRadius: BorderRadius.all(Radius.circular(30)),
+          color: backgroundColor,
+        ),
         child: Column(
           mainAxisSize: MainAxisSize.min,
           mainAxisAlignment: MainAxisAlignment.start,
